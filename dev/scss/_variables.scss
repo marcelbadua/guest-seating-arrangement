@@ -1,0 +1,66 @@
+// Typography
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+$base-font-family: 'Open Sans', sans-serif;
+$heading-font-family: $base-font-family;
+$base-font-weight: 400;
+
+// Line height
+$base-line-height: 1.6;
+$heading-line-height: 1.4;
+
+// Other Sizes
+$base-border-radius: 6px;
+$base-spacing: 1.5rem;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #ddd;
+
+// Font Colors
+$base-font-color: $dark-gray;
+$primary-color: #006891;
+$secondary-color: #e26a1a;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Buttons
+$_button-background-color: $secondary-color;
+$_button-background-color-hover: shade($_button-background-color, 20%);
+
+// Background Colors
+$base-background-color: lighten($light-gray, 10);
+//$secondary-background-color: shade($base-border-color, 75);
+
+// Focus
+$focus-outline-color: transparentize($primary-color, 0.4);
+$focus-outline-width: 3px;
+$focus-outline: $focus-outline-width solid $focus-outline-color;
+$focus-outline-offset: 2px;
+
+// Shadow
+$base-box-shadow: 5px 5px 10px rgba(0,0,0,0.35);
+
+// Animations
+$base-duration: 250ms;
+$base-timing: ease;
+
+$neat-grid: (
+  columns: 12,
+  gutter: 15px,
+);
+
+$medium-screen: (
+  columns: 12,
+  gutter: 60px,
+  media: "(min-width: 480px)",
+);
+$large-screen: (
+  columns: 12,
+  gutter: 60px,
+  media: "(min-width: 768px)",
+);

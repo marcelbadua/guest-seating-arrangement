@@ -1,0 +1,38 @@
+.container {
+  @include clearfix;
+  padding-left: $base-spacing;
+  padding-right: $base-spacing;
+  width: 100%;
+  max-width: 52rem;
+  margin: 0 auto;
+}
+p:last-child {
+  margin-bottom: $base-spacing*2;
+}
+#site-wrap {
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  background-color: $primary-color;
+  padding: $base-spacing;
+  h1, h2, h3 {
+    color: white;
+  }
+  #search{
+    font-size: modular-scale(2);
+    font-weight: 700;
+    text-align: center;
+  }
+  #results-wrap {
+    border-radius: $base-border-radius;
+    padding: 0 $base-spacing;
+    background-color: white;
+    table {
+      th, td {
+        text-align: center;
+        font-size: modular-scale(2);
+        font-weight: 700;
+      }
+    }
+  }
+}

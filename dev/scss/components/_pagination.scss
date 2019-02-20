@@ -1,0 +1,23 @@
+.pagination {
+    display: table;
+    margin: 0 auto $base-spacing;
+    padding: 0;
+    list-style: none;
+    > li {
+        display: table-cell;
+        > .page-numbers {
+            display: inline-block;
+            text-decoration: none;
+            @include padding($small-spacing/1.75 $small-spacing);
+
+            border: $base-border;
+            line-height: 1;
+            margin: 0 $small-spacing/2;
+            &.current {
+              background-color: $primary-color;
+                color: $light-gray;
+                border: 1px solid darken($primary-color, 5%);
+            }
+        }
+    }
+}
